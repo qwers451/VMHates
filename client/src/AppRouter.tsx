@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { authRoutes, publicRoutes } from './routes';
-import { MAIN_ROUTE } from './utils/consts';
+import { authRoutes, publicRoutes } from './routes.tsx';
+import { MAIN_ROUTE } from './utils/consts.js';
 
 const AppRouter: React.FC = () => {
   const allRoutes = [...publicRoutes, ...authRoutes];
