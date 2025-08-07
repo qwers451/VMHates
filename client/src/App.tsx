@@ -1,10 +1,10 @@
-import './App.css'
+import './index.css'
 
 function App() {
 
   return (
     <>
-      <div className="text-center mt-0 text-2xl text-blue-600 font-bold mt-10">
+      <div className="text-6xl">
         Привет из Tailwind!
       </div>
     </>
