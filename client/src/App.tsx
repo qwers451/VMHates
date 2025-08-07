@@ -1,14 +1,12 @@
-import './index.css'
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './AppRouter';
 
-function App() {
-
+const App: React.FC = () => {
   return (
-    <>
-      <div className="text-6xl">
-        Привет из Tailwind!
-      </div>
-    </>
-  )
-}
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;

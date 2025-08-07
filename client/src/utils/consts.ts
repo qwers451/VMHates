@@ -1,0 +1,6 @@
+export const MAIN_ROUTE = '/'
+export const SETTING_ROUTE = '/setting'
+export const CONTACTS_ROUTE = '/contacts'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const CHAT_ROUTE = '/chat'
