@@ -16,7 +16,7 @@ const NavBar = () => {
       : "text-[#C1B6D9] hover:text-[#FFD300]";
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full bg-[#543787] border-t border-[#A06CD5]">
+    <nav className="fixed bottom-0 left-0 w-full bg-[#7851A9] border-t-2 border-[#543679]">
       <div className="flex justify-around items-center py-2">
         <NavLink
           to={MAIN_ROUTE}
