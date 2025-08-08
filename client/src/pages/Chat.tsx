@@ -1,9 +1,5 @@
 const Chat = () => {
-  return (
-    <div>
-        CHAT
-    </div>
-  )
-}
+  return <div>CHAT</div>;
+};
 
-export default Chat
+export default Chat;

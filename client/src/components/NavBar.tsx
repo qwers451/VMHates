@@ -1,10 +1,6 @@
 import { FiMessageCircle, FiUsers, FiSettings } from "react-icons/fi";
 import { NavLink } from "react-router-dom";
-import {
-  MAIN_ROUTE,
-  SETTING_ROUTE,
-  CONTACTS_ROUTE,
-} from "../utils/consts";
+import { MAIN_ROUTE, SETTING_ROUTE, CONTACTS_ROUTE } from "../utils/consts";
 
 const NavBar = () => {
   const baseClasses =
