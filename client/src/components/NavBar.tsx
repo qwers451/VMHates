@@ -1,23 +1,43 @@
 import { FiMessageCircle, FiUsers, FiSettings } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
+import {
+  MAIN_ROUTE,
+  SETTING_ROUTE,
+  CONTACTS_ROUTE,
+} from "../utils/consts";
 
 const NavBar = () => {
+  const baseClasses =
+    "flex flex-col items-center justify-center py-3 px-4 transition-colors duration-300 ease-in-out";
+
+  const getActiveClass = ({ isActive }: { isActive: boolean }): string =>
+    isActive
+      ? "text-[#FFD300] shadow-neon scale-110 pulse"
+      : "text-[#C1B6D9] hover:text-[#FFD300]";
+
   return (
-    <nav className="fixed bottom-0 left-0 w-full bg-[#3B1E54] border-t border-[#A06CD5]">
+    <nav className="fixed bottom-0 left-0 w-full bg-[#543787] border-t border-[#A06CD5]">
       <div className="flex justify-around items-center py-2">
-        <button className="flex flex-col items-center text-[#C1B6D9] hover:text-[#FFD300] active:text-[#FFD300]">
-          <FiMessageCircle size={24} />
-          <span className="text-xs mt-1">Чаты</span>
-        </button>
+        <NavLink
+          to={MAIN_ROUTE}
+          className={(navData) => `${baseClasses} ${getActiveClass(navData)}`}
+        >
+          <FiMessageCircle size={30} />
+        </NavLink>
 
-        <button className="flex flex-col items-center text-[#C1B6D9] hover:text-[#FFD300] active:text-[#FFD300]">
-          <FiUsers size={24} />
-          <span className="text-xs mt-1">Контакты</span>
-        </button>
+        <NavLink
+          to={CONTACTS_ROUTE}
+          className={(navData) => `${baseClasses} ${getActiveClass(navData)}`}
+        >
+          <FiUsers size={30} />
+        </NavLink>
 
-        <button className="flex flex-col items-center text-[#C1B6D9] hover:text-[#FFD300] active:text-[#FFD300]">
-          <FiSettings size={24} />
-          <span className="text-xs mt-1">Настройки</span>
-        </button>
+        <NavLink
+          to={SETTING_ROUTE}
+          className={(navData) => `${baseClasses} ${getActiveClass(navData)}`}
+        >
+          <FiSettings size={30} />
+        </NavLink>
       </div>
     </nav>
   );

@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .shadow-neon {
+    text-shadow:
+      0 0 5px #FFD300,
+      0 0 10px #FFD300,
+      0 0 20px #FFD300,
+      0 0 40px #FFD300;
+  }
+
+  /* Плавное увеличение */
+  .scale-110 {
+    transform: scale(1.10);
+  }
+
+  /* Пульсирующая анимация */
+  @keyframes pulseGlow {
+    0%, 100% {
+      text-shadow:
+        0 0 5px #FFD300,
+        0 0 10px #FFD300,
+        0 0 20px #FFD300,
+        0 0 40px #FFD300;
+    }
+    50% {
+      text-shadow:
+        0 0 10px #FFF44F,
+        0 0 20px #FFF44F,
+        0 0 30px #FFF44F,
+        0 0 50px #FFF44F;
+    }
+  }
+
+  .pulse {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+}
