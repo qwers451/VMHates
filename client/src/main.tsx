@@ -2,6 +2,7 @@ import { StrictMode, createContext } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import UserStore from './store/UserStore.tsx';
+import './index.css'
 
 interface IContext {
   user: UserStore;

@@ -7,11 +7,11 @@ import {
     REGISTRATION_ROUTE,
     CHAT_ROUTE
 } from "./utils/consts.ts"
-import Auth from './components/Auth.tsx';
-import Chat from './components/Chat.tsx';
-import Settings from './components/Settings.tsx';
-import Contacts from './components/Contacts.tsx';
-import Home from './components/Home.tsx';
+import Auth from './pages/Auth.tsx';
+import Chat from './pages/Chat.tsx';
+import Settings from './pages/Settings.tsx';
+import Contacts from './pages/Contacts.tsx';
+import Home from './pages/Home.tsx';
 
 
 export const authRoutes: RouteObject[] = [
