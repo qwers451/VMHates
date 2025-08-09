@@ -1,4 +1,3 @@
-// src/apiService.ts
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
 const API_URL = 'http://localhost:8000/api';
